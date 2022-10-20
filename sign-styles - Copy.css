@@ -1,0 +1,135 @@
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+body {
+	background-color: #FFEEF4;
+    animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+.center {
+    text-align: center;
+}
+
+.welcome {
+	font-family: 'Dongle', sans-serif;
+    font-size: 14vh;
+    color: #F48A9E;
+}
+
+.frogblog {
+	font-family: 'Gochi Hand', cursive;
+    font-size: 11vh;
+    color: #79E361;
+}
+
+.sign {
+	font-family: 'Dongle', sans-serif;
+    font-size: 7vh;
+    color: #F48A9E;
+    line-height: 4vh;
+}
+
+.signer {
+	font-family: 'Gochi Hand', cursive;
+    font-size: 4vh;
+    color: #F48A9E;
+    border: none;
+}
+
+p {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 48px;
+    color: #79E361;
+}
+
+.yassify {
+    font-family: 'Dongle', sans-serif;
+    background-color: white;
+    border: 3px solid #79E361;
+    border-radius: 44px;
+    font-size: 7vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #79E361;
+}
+
+.inup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleing {
+    font-size: 6vh;
+    text-align: center;
+}
+
+.vl {
+    border-left: 4px solid #F48A9E;
+    height: 40vh;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .inup {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .vl {
+      border-bottom: 4px solid #F48A9E;
+      width: 40vh;
+      height:0;
+      margin: 60px;
+    }
+
+    .line {
+      line-height: 10vh;
+    }
+  }

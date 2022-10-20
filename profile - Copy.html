@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="profile-styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div><p class="frogblog">FrogBlog</p></div>
+        <div class="search">
+            <input type="text" id="searchbar" onclick="searchAlert()">
+            <img src="searcgigb.png" class="magnify">
+        </div>
+    </nav>
+
+    <div class="side">
+        <img src = "forg pfp.png" id="pfp"> <br>
+        <div id="username"></div>
+        <div class="buttons">
+            <br class="bye"><button><a href="profile.html">profile</a></button>
+            <br class="bye"><button><a href="about.html">about</a></button>
+            <br class="bye"><button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">extras</a></button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="post pad">
+            <input type="text" id="title-box-input" placeholder="Add a title..."><br>
+            <input type="text" id="text-box-input" placeholder="Add some text...">
+        </div>
+        <div class = "aandd">
+            <img src="delete.png" class="anddelete" onclick="clear()">
+            <img src="add.png" class="anddelete" id="add" onclick="addPost()">
+        </div>
+
+        <div id="divdiv"><div id="comment"></div></div>
+
+        <div class="post top">
+            <h1 id="title" class="margin more">do u love frogs??</h1>
+            <p id="some-text"class="margin">i love frogs!! they are so frog!</p>
+        </div>
+        <div class = "aandd">
+        <img src="delete.png" class="anddelete">
+        </div>
+
+        <div class="comment">
+            <p class="cocoa">awesome! let's be friends :D</p>
+            <p class="cocoa">im a comment too!!</p>
+            <p class="cocoa">this is a comment!</p>
+            <div class="comment-line">
+                <input type="text" id="comment-box-input" placeholder="Add a comment...">
+                <img src="add.png" class="anddelete" id="addComment" onclick="addComment()">
+            </div>
+        </div>
+
+        <div class="post pad">
+            <h1 id="title" >welcome!! :D</h1>
+            <img src="welc.png" id="some-pics">
+        </div>
+        <div class = "aandd">
+        <img src="delete.png" class="anddelete">
+        </div>
+        <div class="comment">
+            <div class="comment-line">
+                <input type="text" id="comment-box-input" placeholder="Add a comment...">
+                <img src="add.png" class="anddelete" id="addComment" onclick="addComment()">
+            </div>
+        </div>
+
+        <div class="post pad">
+            <h1 id="title">lillies!!</h1>
+            <img src="lillies.png" id="some-pics">
+        </div>
+        <div class = "aandd">
+        <img src="delete.png" class="anddelete">
+        </div>
+        <div class="comment">
+            <div class="comment-line">
+                <input type="text" id="comment-box-input" placeholder="Add a comment...">
+                <img src="add.png" class="anddelete" id="addComment" onclick="addComment()">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

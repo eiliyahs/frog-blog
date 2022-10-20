@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sign-styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p class="center line"><span class="welcome">welcome to </span><span class="frogblog">FrogBlog!</span></p>
+    
+    <div class="inup">
+    <div class="in">
+        <p class="titleing">sign in to continue</p>
+        <form action = "profile.html">
+            <label for="email" class="sign">email:</label>
+            <input type="email" id="email" name="email" class="signer"><br><br>
+            <label for="pwd" class="sign">password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" class="signer"><br><br>
+            <div class="center"><input type="submit" value="sign in!" class="yassify center" onClick="getEmail()"></div>
+        </form>
+    </div>
+
+    <div class="vl"></div>
+
+    <div class="up">
+        <p class="titleing">new user? sign up today!</p>
+        <form action = "profile.html">
+            <label for="email" class="sign">email:</label>
+            <input type="email" id="emaill" name="email" class="signer"><br><br>
+            <label for="pwd" class="sign">password:</label>
+            <input type="password" id="pass" name="pwd" minlength="8" class="signer"><br><br>
+            <label for="pwd" class="sign">confirm password:</label>
+            <input type="password" id="pass" name="pwd" minlength="8" class="signer"><br><br>
+            <label for="date" class="sign">birthday:</label>
+            <input type="date" name="birthday" class="signer"><br><br>
+            <label for="phone" class="sign">phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="signer"><br><br>
+            <div class="center"><input type="submit" value="sign up!" class="yassify center" onClick="getEmaill()"></div>
+        </form>
+    </div>
+</div>
+	<p class="sign center">created by eiliyah sarowar!</p>
+</body>
+</html>
