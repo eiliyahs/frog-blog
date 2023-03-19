@@ -59,17 +59,24 @@ function clear() {
     document.getElementById('title-box-input').value = ''
 }
 
-function addComment() {
-    let commentbox = $("#comment-box-input")
-    let input = commentbox.val()
-    let comment = document.createElement('p')
-    comment.innerText = input
-
-    document.getElementById('comment-box-input').value = ''
-    let commentdiv = $(".comment")
-    console.log(input)
-    commentdiv.prepend('<p class="cocoa" onclick = "deleteComment()">' + input + '</p>')
+function addComment(postNum) {
+    // Get the comment box input and comment container for the specified post
+    var commentBoxInput = document.getElementById("comment-box-input-" + postNum);
+    var commentContainer = document.getElementById("comment-" + postNum);
+    
+    // Get the comment text from the input
+    var commentText = commentBoxInput.value;
+    
+    // Create a new comment element and append it to the comment container
+    var newComment = document.createElement("p");
+    newComment.className = "cocoa";
+    newComment.innerHTML = commentText;
+    commentContainer.appendChild(newComment);
+    
+    // Clear the comment box input
+    commentBoxInput.value = "";
 }
+
 
 function deletePost()  {
     let divdiv = $("#divdiv")
