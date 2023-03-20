@@ -56,7 +56,7 @@ function newDiv1() {
 
 function clear() {
     document.getElementById('text-box-input').value = ''
-    document.getElementById('title-box-input').value = ''
+    document.getElementById('title-box-input').value = '' 
 }
 
 function addComment(postNum) {
