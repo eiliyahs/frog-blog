@@ -60,6 +60,7 @@ function clear() {
 }
 
 function addComment(postNum) {
+    console.log(postNum)
     // Get the comment box input and comment container for the specified post
     var commentBoxInput = document.getElementById("comment-box-input-" + postNum);
     var commentContainer = document.getElementById("comment-" + postNum);
