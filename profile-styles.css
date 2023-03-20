@@ -296,7 +296,7 @@ input {
   color: white;
 }
 
-#comment-box-input {
+.comment-box-input {
   background: #F48A9E;
   border-radius: 42px;
   margin-left: 100px;
